@@ -1,0 +1,83 @@
+<!DOCUMENT html>
+<html>
+<head>
+    <title>My Templates</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin: 10px 0;
+        }
+        a {
+            text-decoration: none;
+            color: #007BFF;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .file-link {
+            display: block;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .file-link:hover {
+            background-color: #e9ecef;
+        }
+        .file-link span {
+            display: block;
+            font-size: 0.9em;
+            color: #555;
+        }
+        .file-link .path {
+            font-size: 0.8em;
+            color: #888;
+        }
+        .file-link .status {
+            font-size: 0.8em;
+            color: #28a745;
+        }
+        .file-link .status.deleted {
+            color: #dc3545;
+        }
+        .file-link .status.ignored {
+            color: #ffc107;
+        }
+        .file-link .status.modified {
+            color: #17a2b8;
+        }
+    </style>
+</head>
+<body>
+    <h1>My Templates</h1>
+    <ul>
+        <li>
+            <a class="file-link" href="file:///d%3A/Work/Demo-Stock-Django/mysite/myapptock/views.py">
+                myapptock/views.py
+                <span class="path">Path: mysite/myapptock/views.py</span>
+                <span class="status modified">Modified</span>
+            </a>
+        </li>
+        <li>
+            <a class="file-link" href="file:///d%3A/Work/Demo-Stock-Django/mysite/mysite/settings.py">
+                mysite/settings.py
+                <span class="path">Path: mysite/mysite/settings.py</span>
+                <span class="status ignored">Ignored</span>
+            </a>
+        </li>
+    </ul>
+    <p>These are recently edited files. Do not suggest code that has been deleted.</p>
+    <p>Note: The links above are for demonstration purposes and may not work in your
+    browser. They are intended to show how you can link to files in a Django project.</p>
+</body>
+</html>
