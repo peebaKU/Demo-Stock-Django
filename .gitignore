@@ -1,1 +1,4 @@
 /venv
+/myappstock/__pycache__/*
+/mysite/__pycache__/*
+/mysite/db.sqlite3
